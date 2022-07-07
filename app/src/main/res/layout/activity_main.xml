@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#436BFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="70sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_login"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:layout_marginLeft="20dp"
+        android:text="Enter a Beautiful World"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_text"
+        android:src="@drawable/white_shape"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="300dp"
+        android:background="#E7ECEA"
+        android:hint="Your Email"
+        android:paddingVertical="20dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edt_email"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="#E7ECEA"
+        android:id="@+id/edt_password"
+        android:hint="Password"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:text="forget password"
+        android:textAlignment="textEnd"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#436BFF"
+        android:textSize="17sp"
+        android:id="@+id/tv_forgetPass"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_forgetPass"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp" />
+
+
+</RelativeLayout>
