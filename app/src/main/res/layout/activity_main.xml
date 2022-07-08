@@ -16,7 +16,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/tv_login"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_text"
@@ -32,19 +32,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/tv_text"
-        android:src="@drawable/white_shape"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_shape" />
 
     <EditText
         android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="270dp"
         android:background="#E7ECEA"
+        android:drawableStart="@drawable/ic_outline_email_24"
         android:hint="Your Email"
+        android:paddingHorizontal="20dp"
         android:paddingVertical="20dp"
-        android:paddingLeft="20dp" />
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
@@ -55,8 +57,10 @@
         android:layout_marginHorizontal="30dp"
         android:background="#E7ECEA"
         android:id="@+id/edt_password"
+        android:drawableStart="@drawable/ic_outline_lock_24"
         android:hint="Password"
-        android:paddingLeft="20dp" />
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -64,11 +68,11 @@
         android:layout_below="@id/edt_password"
         android:text="forget password"
         android:textAlignment="textEnd"
-        android:layout_marginRight="45dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="10dp"
         android:textColor="#436BFF"
         android:textSize="17sp"
-        android:id="@+id/tv_forgetPass"/>
+        android:id="@+id/tv_forgetPass" />
 
     <Button
         android:layout_width="match_parent"
@@ -78,9 +82,30 @@
         android:text="Login"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:id="@+id/btn_login"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         android:paddingVertical="10dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_newacc"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="55dp"
+        android:text="Don't have an Account ? "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/tv_newacc"
+        android:text="Register Now"
+        android:textSize="18sp"
+        android:textColor="#2196F3"/>
 
 </RelativeLayout>
